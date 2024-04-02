@@ -11,32 +11,32 @@ import unform2 from "../assets/unform_b299.svg"
 const Carousel = ()=> {
   const slides = [
     {
-      url: '/src/assets/alorado.png',
+      url: '/images/alorado.png',
       title:"alorado home page",
       description:"simple responsive home page with dark mode theme",
     },
     {
-        url: '/src/assets/form.png',
+        url: '/images/form.png',
         title:"Multi-Step register form",
       description:"Multi-Step register form that uses logics in the steps and what the user fill.",
       },
       {
-        url: '/src/assets/guess.png',
+        url: '/images/guess.png',
         title:"Guess the word",
       description:"Game that make you guess the word that displayed mixed .",
       },
       {
-        url: '/src/assets/music.png',
+        url: '/images/music.png',
         title:"Music Player",
       description:"music player that with full control on the music timer .",
       },
       {
-        url: '/src/assets/QR_code.png',
+        url: '/images/QR_code.png',
         title:"QR Code generator",
       description:"QR Code generator from  simple input",
       },
       {
-        url: '/src/assets/queotes.png',
+        url: '/images/queotes.png',
         title:"Random Queotes generator",
       description:"Generate new qurote with every refresh ",}
    
