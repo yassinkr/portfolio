@@ -1,4 +1,3 @@
-import React from 'react';
 import js from '../assets/js.svg';
 import figma_icon from '../assets/figma_icon.svg';
 import Years from './years'
@@ -12,8 +11,8 @@ const Expertise = () => {
         <img src={figma_icon} alt="figma_icon" />
       </div>
 
-      <div className='absolute bg-myblue right-[-8rem] bottom-[-4rem] w-[30rem] h-[30rem] rounded-full'></div>
-      <div className='absolute bg-myblue left-[-8rem] bottom-[-4rem] w-[30rem] h-[30rem] rounded-full'></div>
+      <div className='absolute bg-secondaryblue right-[-8rem] bottom-[-4rem] w-[30rem] h-[30rem] rounded-full'></div>
+      <div className='absolute bg-secondaryblue left-[-8rem] bottom-[-4rem] w-[30rem] h-[30rem] rounded-full'></div>
 
       <div className='absolute bg-myblue right-48 bottom-[-12rem] w-96 h-96 rounded-full'></div>
       <div className='absolute bg-myblue left-48 bottom-[-12rem] w-96 h-96 rounded-full'></div>

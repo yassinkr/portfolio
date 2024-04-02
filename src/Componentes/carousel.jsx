@@ -1,14 +1,5 @@
-import React, { useState } from 'react';
-
-import projects from "../assets/PROJECTS.svg"
-
-import git from "../assets/Git.svg"
-
-import ArchiTool from "../assets/Architecture_Tools.svg"
-
-import unform1 from "../assets/unform_b1c5.svg"
-import unform2 from "../assets/unform_b299.svg"
-const carousel = ()=> {
+import { useState } from 'react';
+const Carousel = ()=> {
   const slides = [
     {
       url: '/src/assets/alorado.png',
@@ -62,36 +53,40 @@ const carousel = ()=> {
   };
 
   return (
-    <div className='max-w-[1400px] h-[780px] w-full z-1 m-auto py-16 px-4 relative group'>
-        <img className="absolute right-0  z-5 w-[32rem] h-24" src={projects}></img> 
-        <img className="absolute right-0 rotate-90 z-5 w-[32rem] h-24" src={git}></img>
-        <img className="absolute right-0 rotate-90 z-5 w-[32rem] h-24" src={ArchiTool}></img>
-        <img className="absolute right-0 rotate-90 z-5 w-[32rem] h-24" src={unform1}></img>
-        <img className="absolute right-0 rotate-90 z-5 w-[32rem] h-24" src={unform2}></img>
-      <div className='relative w-full h-full overflow-hidden bg-center bg-cover' >
+    <div className='max-w-full h-screen w-full z-1 relative group flex flex-col justify-center items-center'>
+      
+        <div className="absolute top-0 right-0 z-10 w-28 h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/PROJECTS.svg)" }}></div>
+        <div className="absolute bottom-24 left-[5%] z-10 w-40 h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/Git.svg)" }}></div>
+        <div className="absolute top-10 right-[36.8%] z-10 w-40 h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/Architecture_Tools.svg)" }}></div>
+        <div className="absolute bottom-0 right-0 z-10 w-48 h-48 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/unform_b299.svg)" }}></div>
+        <div className="absolute top-0 left-0 z-1 w-[25%] h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/unform_b1c5.svg)" }}></div>
+
+      <div className='relative w-[80%] h-[60%] overflow-hidden bg-transparent' >
       {slides.map((slide, index) => (
         <div
           key={index}
           className={`absolute flex z-3 inset-0 w-full h-full rounded-2xl  duration-500 transition ease-in-out delay-150 ${
-            index === currentIndex ? 'translate-x-0' : 'translate-x-full'
+            index === currentIndex ? 'translate-x-0' : 'translate-x-[120%]'
           }`}
           
         >
             <div className="w-2/3 h-full rounded-2xl bg-center bg-cover" style={{ backgroundImage: `url(${slide.url})` }}></div>
             <div className='w-1/3 h-full flex flex-col justify-center items-start m-10'>
-                <div>{slide.title}</div>
-                <div>{slide.description}</div>
+                <div className='text-myblue text-29'>{slide.title}</div>
+                <div className=' text-[18px]'>{slide.description}</div>
             </div>
         </div>
       ))}
       
-    </div>
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <button onClick={prevSlide}  >previous</button>
+     </div>
+     <div className='absolute w-[50%] h-full mr-[29.5%]'>
+      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 rounded-full w-16 h-16 bg-white/20 cursor-pointer justify-center items-center'>
+        <button onClick={prevSlide} className="ml-2 mt-3 w-10 h-10 bg-center bg-contain bg-no-repeat rotate-180 " style={{ backgroundImage: "url(src/assets/Polygon1.svg)" }} ></button>
       </div>
-      {/* Right Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-      <button onClick={nextSlide} >next </button>
+    
+      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 rounded-full w-16 h-16 bg-white/20 cursor-pointer justify-center items-center'>
+      <button onClick={nextSlide} className="ml-4 mt-3 w-10 h-10 bg-center bg-contain bg-no-repeat " style={{ backgroundImage: "url(src/assets/Polygon1.svg)" }}> </button>
+      </div>
       </div>
       <div className='flex top-4 justify-center py-2'>
         {slides.map((slide, slideIndex) => (
@@ -108,4 +103,4 @@ const carousel = ()=> {
   );
 }
 
-export default carousel;
+export default Carousel;

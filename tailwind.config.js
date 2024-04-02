@@ -6,8 +6,16 @@ export default {
   ],  theme: {
 
     extend: {
-      
+      animation: {
+        move: 'move 2s infinite alternate',
+      },
+      keyframes: { 
     
+        move: {
+          '0%': { left: '0' },
+          '100%': { left: 'calc(100% - 100px)'}
+        }
+      },
       fontFamily: {
         bebas: ['Bebas Neue'],
         // Add more custom font families here if needed
@@ -28,7 +36,8 @@ export default {
           
         myred:"#FF003D",
         
-        myblue:  '#0085FF',
+        myblue:  '#5364FF',
+        secondaryblue:"#0085FF"
           
       },
     },

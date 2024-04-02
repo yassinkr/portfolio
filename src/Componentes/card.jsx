@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import Book from '../assets/book.jsx';
 import Pincel from '../assets/pincel.jsx';
 import Tags from '../assets/tags.jsx';
@@ -13,12 +13,13 @@ const Card = ({ color,title,desc }) => {
     case 'myyellow':
       svg = <Tags />;
       break;
-    case 'myblue':
+    case 'secondaryblue':
       svg = <Pincel />;
       break;
     default:
       svg = null;
   }
+ 
   return (
     <div className={`w-[250px] h-[342px] rounded-b-[125px] bg-${color} text-white relative `}>
       <div className={`bg-gradient-to-b from-${color} to-white w-full h-[145px] border-[9px] border-transparent text-42 text-white flex justify-center items-center `}>
@@ -33,5 +34,9 @@ const Card = ({ color,title,desc }) => {
     </div>
   );
 };
-
+Card.propTypes={
+  color: PropTypes.string,
+  title: PropTypes.string,
+  desc: PropTypes.string,
+};
 export default Card;

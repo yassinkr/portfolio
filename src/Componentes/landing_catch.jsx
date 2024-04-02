@@ -1,4 +1,3 @@
-import React from 'react';
 import instagram from '../assets/instagram.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
@@ -24,7 +23,7 @@ const LandingCatch = () => {
 
   return (
     
-    <div className='bg-blue-500 flex justify-end font-bebas items-center text-center text-white h-screen w-full relative overflow-hidden'>
+    <div className='bg-myblue flex justify-end font-bebas items-center text-center text-white h-screen w-full relative overflow-hidden'>
       <div style={containerStyle}></div>
         <div className=' bg-white absolute left-[-45rem] top-[-19rem] h-[80rem] rotate-45 aspect-square flex flex-col gap-16  py-16 z-0'>
         <div className='bg-myblue w-full h-10'></div>
@@ -37,9 +36,12 @@ const LandingCatch = () => {
      <img src={sparcle2} alt="sparcle2" />
       </div>
 
-      <div className='grid aligne-right px-80 '>
-        <div className='underline font-md text-7xl text-white'>
+      <div className='flex flex-col justify-center items-center px-80 '>
+        <div className=' font-md text-7xl text-white'>
           HI! I am Yassin Kerrai
+        </div>
+        <div className='w-[80%] h-1 bg-white'>
+        <div className='w-1 h-1 shadow-sm shadow-white animate-move' ></div>
         </div>
         <div className='text-29 font-md pt-2'>
           Crafting Digital Experiences with Precision and Passion
