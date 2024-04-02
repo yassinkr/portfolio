@@ -7,7 +7,7 @@ import ArchiTool from "../assets/Architecture_Tools.svg"
 
 import unform1 from "../assets/unform_b1c5.svg"
 import unform2 from "../assets/unform_b299.svg"
-
+import Polygon from "../assets/Polygon1.svg"
 const Carousel = ()=> {
   const slides = [
     {
@@ -91,11 +91,11 @@ const Carousel = ()=> {
      </div>
      <div className='absolute w-[50%] h-full mr-[29.5%]'>
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 rounded-full w-16 h-16 bg-white/20 cursor-pointer justify-center items-center'>
-        <button onClick={prevSlide} className="ml-2 mt-3 w-10 h-10 bg-center bg-contain bg-no-repeat rotate-180 " style={{ backgroundImage: "url(src/assets/Polygon1.svg)" }} ></button>
+        <button onClick={prevSlide} className="ml-2 mt-3 w-10 h-10 bg-center bg-contain bg-no-repeat rotate-180 " style={{ backgroundImage: `url(${Polygon})`}} ></button>
       </div>
     
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 rounded-full w-16 h-16 bg-white/20 cursor-pointer justify-center items-center'>
-      <button onClick={nextSlide} className="ml-4 mt-3 w-10 h-10 bg-center bg-contain bg-no-repeat " style={{ backgroundImage: "url(src/assets/Polygon1.svg)" }}> </button>
+      <button onClick={nextSlide} className="ml-4 mt-3 w-10 h-10 bg-center bg-contain bg-no-repeat " style={{ backgroundImage: `url(${Polygon})`}}> </button>
       </div>
       </div>
       <div className='flex top-4 justify-center py-2'>
