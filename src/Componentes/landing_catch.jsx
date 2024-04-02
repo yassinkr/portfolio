@@ -23,7 +23,7 @@ const LandingCatch = () => {
   return (
     
     <div className='bg-myblue flex justify-center lg:justify-end items-end lg:items-center text-center text-white h-screen w-full relative overflow-hidden'>
-      <div style={containerStyle} className='w-[270px] h-[500px] lg:w-[330px] lg:h-[600px] left-[20%] xs:left-[30%] md:left-[36%] lg:left-[22%] 3xl:left-[490px] top-24 lg:top-32 xs:top-32'></div>
+      <div style={containerStyle} className='w-[270px] h-[500px] lg:w-[330px] lg:h-[600px] left-[20%] xs:left-[30%] md:left-[36%] lg:left-[22%] 3xl:left-[490px] top-10 md:top-24 lg:top-32 xs:top-32'></div>
         <div className=' bg-white absolute left-[-80rem] md:left-[-70rem] lg:left-[-65rem] 3xl:left-[-46rem] md:top-[-10rem] lg:top-[-19rem] h-[80rem] rotate-45 aspect-square flex flex-col gap-16  py-16 z-0'>
         <div className='bg-myblue w-full h-10'></div>
         <div className='bg-myblue w-full h-10'></div>
