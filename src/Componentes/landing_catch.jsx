@@ -23,26 +23,26 @@ const LandingCatch = () => {
   return (
     
     <div className='bg-myblue flex justify-center lg:justify-end items-end lg:items-center text-center text-white h-screen w-full relative overflow-hidden'>
-      <div style={containerStyle} className='w-[270px] h-[500px] lg:w-[330px] lg:h-[600px] left-[35%] md:left-[36%] lg:left-[22%] 3xl:left-[490px] top-[140px]'></div>
-        <div className=' bg-white absolute left-[-70rem] lg:left-[-65rem] 3xl:left-[-46rem] top-[-19rem] h-[80rem] rotate-45 aspect-square flex flex-col gap-16  py-16 z-0'>
+      <div style={containerStyle} className='w-[270px] h-[500px] lg:w-[330px] lg:h-[600px] left-[12%] sm:left-[30%] md:left-[36%] lg:left-[22%] 3xl:left-[490px] top-16 md:top-[300px]'></div>
+        <div className=' bg-white absolute left-[-80rem] md:left-[-70rem] lg:left-[-65rem] 3xl:left-[-46rem] md:top-[-5rem] lg:top-[-19rem] h-[80rem] rotate-45 aspect-square flex flex-col gap-16  py-16 z-0'>
         <div className='bg-myblue w-full h-10'></div>
         <div className='bg-myblue w-full h-10'></div>
       </div>
-      <div className='absolute  w-[180px] h-[180px] top-[150px] left-[60%]  lg:left-[45%] xl:left-[38%] z-10'>
+      <div className='absolute  w-[180px] h-[180px] top-[18rem] lg:top-[150px] left-[120%] md:left-[60%]  lg:left-[45%] xl:left-[38%] z-10'>
      <img src={sparcle1} alt="sparcle1" />
       </div>
-      <div className='absolute  w-[197px] h-[197px] bottom-72 lg:bottom-32 left-[20%] z-10 '>
+      <div className='absolute  w-[197px] h-[197px] bottom-[30rem] lg:bottom-32 left-[120%] md:left-[20%] z-10 '>
      <img src={sparcle2} alt="sparcle2" />
       </div>
 
-      <div className='flex flex-col justify-center items-center mb-36  lg:mr-[5%] xl:mr-[7%]  3xl:px-80'>
+      <div className='flex flex-col justify-center items-center mb-40 sm:mb-[20rem] lg:mb-36  lg:mr-[5%] xl:mr-[7%]  3xl:px-80'>
         <div className=' font-md text-42 xl:text-7xl text-white'>
           HI! I am Yassin Kerrai
         </div>
-        <div className='w-[100%] h-1 mb-5 bg-white relative'>
+        <div className='w-[80%] sm:w-full h-1 lg:mb-5 bg-white relative'>
                 <div className=' absolute w-3 h-1 top-0 bottom-0 bg-white shadow-sm shadow-white animate-move'></div>
             </div>
-        <div className='text-xl xl:text-29 font-md pt-2'>
+        <div className='text-xl xl:text-29  font-md pt-2'>
           Crafting Digital Experiences with Precision and Passion
         </div>
         <div className='flex justify-center align-middle items-center text-white ' >

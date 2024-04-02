@@ -75,13 +75,13 @@ const Carousel = ()=> {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute flex flex-col md:flex-row z-3 inset-0 w-full h-full rounded-2xl  duration-500 transition ease-in-out delay-150 ${
+          className={`absolute flex flex-col lg:flex-row z-3 inset-0 w-full h-full rounded-2xl  duration-500 transition ease-in-out delay-150 ${
             index === currentIndex ? 'translate-x-0' : 'translate-x-[120%]'
           }`}
           
         >
-            <div className="w-full md:w-2/3 h-full rounded-2xl bg-center bg-cover" style={{ backgroundImage: `url(${slide.url})` }}></div>
-            <div className='w-full md:w-1/3 h-full flex flex-col justify-center items-start m-10'>
+            <div className="w-full lg:w-2/3 h-full rounded-2xl bg-center bg-cover" style={{ backgroundImage: `url(${slide.url})` }}></div>
+            <div className='w-full lg:w-1/3 h-full flex flex-col justify-center items-start m-10'>
                 <div className='text-secondaryblue text-29'>{slide.title}</div>
                 <div className=' text-[18px]'>{slide.description}</div>
             </div>
@@ -89,12 +89,12 @@ const Carousel = ()=> {
       ))}
       
      </div>
-     <div className='absolute w-[80%]  md:w-[50%] h-full md:mr-[29.5%]'>
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 rounded-full w-16 h-16 bg-white/20 cursor-pointer justify-center items-center'>
+     <div className='absolute w-[80%]  lg:w-[50%] h-full lg:mr-[29.5%]'>
+      <div className='xl:hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 rounded-full w-16 h-16 bg-white/20 cursor-pointer justify-center items-center'>
         <button onClick={prevSlide} className="ml-2 mt-3 w-10 h-10 bg-center bg-contain bg-no-repeat rotate-180 " style={{ backgroundImage: `url(${Polygon})`}} ></button>
       </div>
     
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 rounded-full w-16 h-16 bg-white/20 cursor-pointer justify-center items-center'>
+      <div className='xl:hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 rounded-full w-16 h-16 bg-white/20 cursor-pointer justify-center items-center'>
       <button onClick={nextSlide} className="ml-4 mt-3 w-10 h-10 bg-center bg-contain bg-no-repeat " style={{ backgroundImage: `url(${Polygon})`}}> </button>
       </div>
       </div>
