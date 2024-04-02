@@ -1,4 +1,13 @@
 import { useState } from 'react';
+import projects from "../assets/PROJECTS.svg"
+
+import git from "../assets/Git.svg"
+
+import ArchiTool from "../assets/Architecture_Tools.svg"
+
+import unform1 from "../assets/unform_b1c5.svg"
+import unform2 from "../assets/unform_b299.svg"
+
 const Carousel = ()=> {
   const slides = [
     {
@@ -51,15 +60,16 @@ const Carousel = ()=> {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+  
 
   return (
     <div className='max-w-full h-screen w-full z-1 relative group flex flex-col justify-center items-center'>
       
-        <div className="absolute top-0 right-0 z-10 w-28 h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/PROJECTS.svg)" }}></div>
-        <div className="absolute bottom-24 left-[5%] z-10 w-40 h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/Git.svg)" }}></div>
-        <div className="absolute top-10 right-[36.8%] z-10 w-40 h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/Architecture_Tools.svg)" }}></div>
-        <div className="absolute bottom-0 right-0 z-10 w-48 h-48 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/unform_b299.svg)" }}></div>
-        <div className="absolute top-0 left-0 z-1 w-[25%] h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: "url(src/assets/unform_b1c5.svg)" }}></div>
+        <div className="absolute top-0 right-0 z-10 w-28 h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${projects})` }}></div>
+        <div className="absolute bottom-24 left-[5%] z-10 w-40 h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${git})` }}></div>
+        <div className="absolute top-10 right-[36.8%] z-10 w-40 h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${ArchiTool})` }}></div>
+        <div className="absolute bottom-0 right-0 z-10 w-48 h-48 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${unform2})` }}></div>
+        <div className="absolute top-0 left-0 z-1 w-[25%] h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${unform1})`}}></div>
 
       <div className='relative w-[80%] h-[60%] overflow-hidden bg-transparent' >
       {slides.map((slide, index) => (
@@ -72,7 +82,7 @@ const Carousel = ()=> {
         >
             <div className="w-2/3 h-full rounded-2xl bg-center bg-cover" style={{ backgroundImage: `url(${slide.url})` }}></div>
             <div className='w-1/3 h-full flex flex-col justify-center items-start m-10'>
-                <div className='text-myblue text-29'>{slide.title}</div>
+                <div className='text-secondaryblue text-29'>{slide.title}</div>
                 <div className=' text-[18px]'>{slide.description}</div>
             </div>
         </div>
