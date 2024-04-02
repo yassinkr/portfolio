@@ -18,7 +18,7 @@ const Expertise = () => {
       <div className='absolute bg-myblue left-16 md:left-32 xl:left-48 bottom-[-5rem] xl:bottom-[-12rem] w-44 h-44 md:w-56 md:h-56 xl:w-96 xl:h-96 rounded-full'></div>
 
 
-      <div className='flex flex-col justify-center aligne-middle items-center mt-10 lg:mt-0 px-80 w-[500px] '>
+      <div className='flex flex-col justify-center aligne-middle items-center mt-16 lg:mt-0 px-80 w-[500px] '>
         <div className='text-xl sm:text-2xl md:text-42 lg:text-7xl text-black-400 w-max border-b-2 border-black-400'>
           specializing in Ui & UX and web development
         </div>
