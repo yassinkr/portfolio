@@ -23,7 +23,7 @@ const LandingCatch = () => {
   return (
     
     <div className='bg-myblue flex justify-center lg:justify-end items-end lg:items-center text-center text-white h-screen w-full relative overflow-hidden'>
-      <div style={containerStyle} className='w-[270px] h-[500px] lg:w-[330px] lg:h-[600px] left-[12%] sm:left-[30%] md:left-[36%] lg:left-[22%] 3xl:left-[490px] lg:top-32 sm:top-32'></div>
+      <div style={containerStyle} className='w-[270px] h-[500px] lg:w-[330px] lg:h-[600px] left-[12%] sm:left-[30%] md:left-[36%] lg:left-[22%] 3xl:left-[490px] top-32 lg:top-32 sm:top-32'></div>
         <div className=' bg-white absolute left-[-80rem] md:left-[-70rem] lg:left-[-65rem] 3xl:left-[-46rem] md:top-[-10rem] lg:top-[-19rem] h-[80rem] rotate-45 aspect-square flex flex-col gap-16  py-16 z-0'>
         <div className='bg-myblue w-full h-10'></div>
         <div className='bg-myblue w-full h-10'></div>
@@ -35,7 +35,7 @@ const LandingCatch = () => {
      <img src={sparcle2} alt="sparcle2" />
       </div>
 
-      <div className='flex flex-col justify-center items-center mb-40 sm:mb-[20rem] md:mb-32 lg:mb-36  lg:mr-[5%] xl:mr-[7%]  3xl:px-80'>
+      <div className='flex flex-col justify-center items-center mb-32 lg:mb-36  lg:mr-[5%] xl:mr-[7%]  3xl:px-80'>
         <div className=' font-md text-42 xl:text-7xl text-white'>
           HI! I am Yassin Kerrai
         </div>
