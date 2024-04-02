@@ -7,7 +7,7 @@ import ArchiTool from "../assets/Architecture_Tools.svg"
 
 import unform1 from "../assets/unform_b1c5.svg"
 import unform2 from "../assets/unform_b299.svg"
-import Polygon from "../assets/Polygon1.svg"
+import Polygon from "/images/Polygon1.svg"
 const Carousel = ()=> {
   const slides = [
     {
