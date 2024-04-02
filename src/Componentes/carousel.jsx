@@ -66,8 +66,8 @@ const Carousel = ()=> {
     <div className='max-w-full h-screen w-full z-1 relative group flex flex-col justify-center items-center'>
       
         <div className="absolute top-0 right-0 z-10 w-28 h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${projects})` }}></div>
-        <div className="absolute bottom-24 left-[5%] z-10 w-40 h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${git})` }}></div>
-        <div className="absolute top-10 right-[36.8%] z-10 w-40 h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${ArchiTool})` }}></div>
+        <div className="absolute bottom-24 left-[5%] z-10 w-20 h-20 md:w-40 md:h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${git})` }}></div>
+        <div className="absolute top-10 right-[36.8%] z-10 w-20 h-20 md:w-40 md:h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${ArchiTool})` }}></div>
         <div className="absolute bottom-0 right-0 z-10 w-48 h-48 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${unform2})` }}></div>
         <div className="absolute top-0 left-0 z-1 w-[25%] h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${unform1})`}}></div>
 
