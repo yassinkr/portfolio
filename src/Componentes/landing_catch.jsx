@@ -35,7 +35,7 @@ const LandingCatch = () => {
      <img src={sparcle2} alt="sparcle2" />
       </div>
 
-      <div className='flex flex-col justify-center items-center mb-32 lg:mb-36  lg:mr-[5%] xl:mr-[7%]  3xl:px-80'>
+      <div className='flex flex-col justify-center items-center mb-24 lg:mb-36  lg:mr-[5%] xl:mr-[7%]  3xl:px-80'>
         <div className=' font-md text-42 xl:text-7xl text-white'>
           HI! I am Yassin Kerrai
         </div>
