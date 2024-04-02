@@ -1,7 +1,7 @@
 import Card from './card'
 const cards = () => {
   return (
-    <div className='w-full  h-screen relative flex justify-center items-center overflow-hidden'>
+    <div className='w-full  h-max lg:h-screen relative flex justify-center items-center overflow-hidden'>
       <div className='w-full  h-screen absolute overflow-hidden bg-opacity-100'>
        <div className='relativ bg-opacity-100'>
         <div className='rounded-full w-[562px] h-[562px] bg-secondaryblue left-[500px] bottom-[-432px] absolute'></div>
@@ -14,7 +14,7 @@ const cards = () => {
         <div className='rounded-full w-[562px] h-[562px] bg-secondaryblue left-[-151px] top-[-156px] absolute opacity-[60%]'></div></div>
       </div>
       <div className='flex justify-center align-middle items-center backdrop-blur-[150px] w-full h-full'>
-              <div className=''>
+              <div className='w-full flex justify-center items-center flex-col'>
                 <div className='py-[40px]'> 
                  <div className='text-secondaryblue text-3xl text-center'>
                    Skills & professions 
@@ -25,7 +25,7 @@ const cards = () => {
                 </div>
       
 
-                <div className='flex space-x-3 justify-center items-center align-middle gap-[85px] bg-opacity-100'>
+                <div className='flex flex-col lg:flex-row w-[80%] justify-between items-center bg-opacity-100'>
                  <Card color={"secondaryblue"} title={"UI&UX"} desc={"web design services and user experience research"}/>        
                  <Card color={"myyellow"} title={"WEBDEV"} desc={"creating Responsive and efficient web experiences"}/>
                  <Card color={"myred"} title={"Data Science"} desc={"working on this"}/>
