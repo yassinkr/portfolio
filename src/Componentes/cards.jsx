@@ -1,7 +1,7 @@
 import Card from './card'
 const cards = () => {
   return (
-    <div className='w-full  h-[1290px] lg:h-screen relative flex justify-center items-center overflow-hidden'>
+    <div id="fields" className='w-full  h-[1290px] lg:h-screen relative flex justify-center items-center overflow-hidden'>
       <div className='w-full  h-screen absolute overflow-hidden bg-opacity-100'>
        <div className='relativ bg-opacity-100'>
         <div className='rounded-full w-[562px] h-[562px] bg-secondaryblue left-[500px] bottom-[-432px] absolute'></div>

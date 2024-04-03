@@ -3,7 +3,7 @@ import figma_icon from '../assets/figma_icon.svg';
 import Years from './years'
 const Expertise = () => {
   return (
-    <div className='relative w-full  h-screen flex justify-center items-center overflow-hidden '>
+    <div id="expertise" className='relative w-full  h-screen flex justify-center items-center overflow-hidden '>
       <div className='absolute right-[-5rem] md:right-12 top-20 w-72 h-72'>
         <img src={js} alt="js" />
       </div>
@@ -24,15 +24,15 @@ const Expertise = () => {
         </div>
         
         <div className='flex justify-center align-middle items-center text-white py-2' >
-        <ul className=' flex space-x-4'>
+        <ul className=' flex justify-between mt-5'>
         <li>
-        <Years prenumber={'+'} text={'YEARS OF EXPERIENCE'} targetValue={5}/>
+        <Years prenumber={'+'} text={'YEARS OF EXPERIENCE'} targetValue={4}/>
         </li>
         <li>
         <Years prenumber={'+'} text={'Finished Projects'}targetValue={10}/>
         </li>
         <li>
-        <Years prenumber={''} text={'Academic certificates'}targetValue={3}/>
+        <Years prenumber={''} text={'Academic certificates'}targetValue={1}/>
         </li>
  
         </ul>

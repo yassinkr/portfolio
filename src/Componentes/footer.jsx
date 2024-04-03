@@ -25,7 +25,7 @@ const Footer = () => {
       );
   };
   return (
-    <div className='w-full relative flex justify-center items-center overflow-hidden bg-myblue text-white'>
+    <div id="contact" className='w-full relative flex justify-center items-center overflow-hidden bg-myblue text-white'>
       <div className="w-full  mb-32 md:pb-0 max-w-screen-lg  px-5 md:px-10 py-10 flex flex-col md:flex-row justify-between items-center">
         <div className="w-full  md:w-1/4 text-white flex flex-col justify-between items-start mb-10 md:mb-0">
           <div className="text-2xl h-10 mb-3">GIT A PROJECT?</div>

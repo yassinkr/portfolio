@@ -47,7 +47,7 @@ const Years = ({ prenumber, text, targetValue }) => {
   return (
     <div ref={targetRef} className='flex justify-center items-center align-middle text-myblack'>
       <div className='text-2xl sm:text-[30px] md:text-42 lg:text-83'>{prenumber}{year}</div>
-      <div className='text-md sm:text-lg  md:text-29 lg:text-42 px-2'>{text}</div>
+      <div className='text-md sm:text-lg  md:text-29 lg:text-42 mx-2 '>{text}</div>
     </div>
   );
 };

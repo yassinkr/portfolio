@@ -63,7 +63,7 @@ const Carousel = ()=> {
   
 
   return (
-    <div className='max-w-full h-screen w-full z-1 relative group flex flex-col justify-center items-center'>
+    <div id="git" className='max-w-full h-screen w-full z-1 relative group flex flex-col justify-center items-center'>
       
         <div className="absolute top-0 right-0 z-10 w-28 h-1/2 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${projects})` }}></div>
         <div className="absolute bottom-24 left-[5%] z-10 w-20 h-20 md:w-40 md:h-40 bg-center bg-cover bg-no-repeat " style={{ backgroundImage: `url(${git})` }}></div>
