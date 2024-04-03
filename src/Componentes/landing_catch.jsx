@@ -1,4 +1,4 @@
-import instagram from '../assets/instagram.svg'
+import github from '../assets/github_icon.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
 import sparcle1 from '../assets/sparcle_1.svg'
@@ -48,16 +48,15 @@ const LandingCatch = () => {
         <div className='flex justify-center align-middle items-center text-white ' >
         <ul className='text-xs flex space-x-4'>
         <li>
-        <img src={linkedin} alt="linkedin" />
+          <a href="https://dz.linkedin.com/in/mohammed-yassine-kerrai-5a5237242"><img src={linkedin} alt="linkedin" /></a>
         </li>
         <li>
-        <img src={twitter} alt="twitter" />
+          <a href="https://twitter.comhttps://x.com/xyassinkr?t=S2jhJu9Uz0OmaZmbzOiO1Q&s=09"><img src={twitter} alt="twitter" /></a>
         </li>
         <li>
-        <img src={instagram} alt="instagram" />
+          <a href="https://github.com/yassinkr"><img src={github} alt="github" /></a>
         </li>
- 
-        </ul>
+      </ul>
 
         </div>
       </div>

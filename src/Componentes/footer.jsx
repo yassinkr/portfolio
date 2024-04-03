@@ -1,4 +1,4 @@
-import instagram from '../assets/instagram.svg'
+import github from '../assets/github_icon.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
 import Arrow from '../assets/solar_arrow.svg'
@@ -32,10 +32,14 @@ const Footer = () => {
           <div className="text-4xl mb-5">Let&apos;s Talk!</div>
           <div className="text-base mb-5">Send me a detailed email containing your project&apos;s ideas and other details like budget specifications</div>
           <div className="text-base mb-5">kerraiyassin@gmail.com</div>
-          <div className='flex justify-start items-center space-x-4'>
-            <img src={linkedin} alt="linkedin" />
-            <img src={twitter} alt="twitter" />
-            <img src={instagram} alt="instagram" />
+          <div className='flex justify-start space-x-4'>
+          
+          <a href="https://dz.linkedin.com/in/mohammed-yassine-kerrai-5a5237242"><img src={linkedin} alt="linkedin" /></a>
+       
+          <a href="https://twitter.comhttps://x.com/xyassinkr?t=S2jhJu9Uz0OmaZmbzOiO1Q&s=09"><img src={twitter} alt="twitter" /></a>
+       
+          <a href="https://github.com/yassinkr"><img src={github} alt="github" /></a>
+      
           </div>
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-start items-start md:flex-wrap">
