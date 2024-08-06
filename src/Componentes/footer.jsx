@@ -12,6 +12,7 @@ const Footer = () => {
     if(form.current.from_name.value === '' || form.current.reply_to.value === '' || form.current.message.value === ''){
       alert('can not send without filling all the fields...');
     }
+    else{
     emailjs
       .sendForm('service_9o3v7o9', 'template_ja6v1o8', form.current, {
         publicKey: 'e0ydrBxzMY_6aWfET',
@@ -25,7 +26,7 @@ const Footer = () => {
           alert('FAILED...');
         },
       );
-  };
+    }};
   return (
     <div id="contact" className='w-full relative flex justify-center items-center overflow-hidden bg-myblue text-white'>
       <div className="w-full  mb-32 md:pb-0 max-w-screen-lg  px-5 md:px-10 py-10 flex flex-col md:flex-row justify-between items-center">
