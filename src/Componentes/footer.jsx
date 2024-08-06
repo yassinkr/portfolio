@@ -9,7 +9,9 @@ const Footer = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    if(form.current.from_name.value === '' || form.current.reply_to.value === '' || form.current.message.value === ''){
+      alert('can not send without filling all the fields...');
+    }
     emailjs
       .sendForm('service_9o3v7o9', 'template_ja6v1o8', form.current, {
         publicKey: 'e0ydrBxzMY_6aWfET',
